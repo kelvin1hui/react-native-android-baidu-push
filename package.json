@@ -12,8 +12,5 @@
     "url": "https://github.com/kelvin1hui/react-native-android-baidu-push"
   },
   "author": "",
-  "license": "",
-  "peerDependencies": {
-    "react-native": "^0.41.2"
-  }
+  "license": ""
 }
