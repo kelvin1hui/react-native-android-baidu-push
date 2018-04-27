@@ -112,7 +112,7 @@ public class MyPushMessageReceiver extends PushMessageReceiver {
         notificationIntent.putExtra("url", url);
         PendingIntent contentIntent = PendingIntent.getActivity(context, 0, notificationIntent, PendingIntent.FLAG_UPDATE_CURRENT);
         NotificationCompat.Builder notificationBuilder = new NotificationCompat.Builder(context)
-                .setSmallIcon(context.getResources().getIdentifier("ic_stat_explicit", "mipmap", context.getPackageName()))
+                .setSmallIcon(context.getResources().getIdentifier("ic_notification", "mipmap", context.getPackageName()))
                 .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), context.getResources().getIdentifier("ic_launcher", "mipmap", context.getPackageName())))
                 .setContentTitle(title)
                 .setContentText(content);
