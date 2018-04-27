@@ -1,4 +1,4 @@
-package com.example.qiepeipei.react_native_bdpush;
+package com.kelvin.react_native_android_baidu_push;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;

@@ -1,4 +1,4 @@
-package com.example.qiepeipei.react_native_bdpush;
+package com.kelvin.react_native_android_baidu_push;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -27,7 +27,6 @@ public class Utils {
 
     public static String logStringCache = "";
 
-    // 获取ApiKey
     public static String getMetaValue(Context context, String metaKey) {
         Bundle metaData = null;
         String apiKey = null;
