@@ -12,10 +12,6 @@ import {
     AppState
 } from 'react-native'
 
-const {
-    RNReactNativeAndroidBaiduPush
-} = NativeModules;
-
 var PushObj = NativeModules.BaiDuPushManager;
 
 class RNReactNativeAndroidBaiduPush {
