@@ -50,7 +50,12 @@ public class BGBaiDuPushModule extends ReactContextBaseJavaModule {
     }
 
     public void initialise(){
-        PushManager.startWork(getReactApplicationContext(), PushConstants.LOGIN_TYPE_API_KEY,Utils.getMetaValue(getReactApplicationContext(), "api_key"));
+
+    }
+
+    @ReactMethod
+    public void startWork(String apiKey){
+        PushManager.startWork(getReactApplicationContext(), PushConstants.LOGIN_TYPE_API_KEY, apiKey);
     }
 
     //send message to react native

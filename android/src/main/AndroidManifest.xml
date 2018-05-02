@@ -91,10 +91,6 @@
               android:protectionLevel="signature"
               android:writePermission="baidu.push.permission.WRITE_PUSHINFOPROVIDER./*Insert your main activity package name here*/" />
               
-              <!-- Baidu push message api key-->
-              <meta-data
-              android:name="api_key"
-              android:value="/*Insert your api key here*/" />
               
           </application>
 

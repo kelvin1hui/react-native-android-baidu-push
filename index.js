@@ -12,9 +12,13 @@ import {
     AppState
 } from 'react-native'
 
+// const {
+//     RNReactNativeAndroidBaiduPush
+// } = NativeModules;
+
 var PushObj = NativeModules.BaiDuPushManager;
 
-class RNReactNativeAndroidBaiduPush {
+class BdPush {
 
     constructor() {
         this.ReceiveMessageObj = null;
@@ -67,6 +71,10 @@ class RNReactNativeAndroidBaiduPush {
 
     }
 
+    startWork(apiKey) {
+        PushObj.startWork(apiKey);
+    }
+
     async getChannelId() {
         try {
             return await PushObj.getChannelId();
@@ -92,4 +100,4 @@ class RNReactNativeAndroidBaiduPush {
     }
 
 }
-export default new RNReactNativeAndroidBaiduPush();
+export default new BdPush();
